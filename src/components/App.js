@@ -1,32 +1,31 @@
-import React from 'react';
-import Tooltip from './Tooltip';
+import React from "react";
+import Tooltip from "./Tooltip";
+import "../styles/Tooltip.css";
 
 function App() {
   return (
-    <div style={{ padding: '50px' }}>
+    <div style={{ padding: "50px" }}>
       <h2>React Tooltip Demo</h2>
-      
-      <Tooltip text="This is a tooltip for the button!">
-        <button>Hover over me</button>
-      </Tooltip>
+      <button className="tooltip">
+        <Tooltip text="This is a tooltip for the button!">
+          Hover over me
+        </Tooltip>
+      </button>
+      <br />
+      <br />
 
-      <br /><br />
+      <p className="tooltip">
+        <Tooltip text="This is some tooltip text for a paragraph.">
+          Hover over this paragraph to see a tooltip.
+        </Tooltip>
+      </p>
 
-      <Tooltip text="This is some tooltip text for a paragraph.">
-        <p>Hover over this paragraph to see a tooltip.</p>
-      </Tooltip>
+      <br />
+      <br />
 
-      <br /><br />
-      
-      <Tooltip text="This is some tooltip text for a paragraph.">
-        <h2>Hover over this paragraph to see a tooltip.</h2>
-      </Tooltip>
-
-      <br /><br />
-
-      <Tooltip text="Even icons can have tooltips!">
-        <span role="img" aria-label="info">ℹ️</span>
-      </Tooltip>
+      <span role="img" aria-label="info" className="tooltip">
+        <Tooltip text="Even icons can have tooltips!">ℹ️</Tooltip>
+      </span>
     </div>
   );
 }
