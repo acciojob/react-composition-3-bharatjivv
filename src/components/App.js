@@ -6,11 +6,11 @@ function App() {
   return (
     <div style={{ padding: "50px" }}>
       <h2>React Tooltip Demo</h2>
-      <button className="tooltip">
+      <h2 className="tooltip">
         <Tooltip text="This is a tooltip for the button!">
-          Hover over me
+          <div>Hover over me</div>
         </Tooltip>
-      </button>
+      </h2>
       <br />
       <br />
 
@@ -23,9 +23,9 @@ function App() {
       <br />
       <br />
 
-      <span role="img" aria-label="info" className="tooltip">
-        <Tooltip text="Even icons can have tooltips!">ℹ️</Tooltip>
-      </span>
+      <h2 className="tooltip">
+        <Tooltip text="Even icons can have tooltips!">Lorem2</Tooltip>
+      </h2>
     </div>
   );
 }
