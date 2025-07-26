@@ -15,7 +15,7 @@ function App() {
       </h2>
 
       <p className="tooltip">
-        <Tooltip text="This is some tooltip text for a paragraph.">
+        <Tooltip text="This is another tooltip">
           Hover over this paragraph to see a tooltip.
         </Tooltip>
       </p>
