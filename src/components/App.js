@@ -5,7 +5,6 @@ import "../styles/Tooltip.css";
 function App() {
   return (
     <div style={{ padding: "50px" }}>
-      <h2>React Tooltip Demo</h2>
       
       <h2 className="tooltip">
         <div>
@@ -14,8 +13,6 @@ function App() {
         </Tooltip>
         </div>
       </h2>
-      <br />
-      <br />
 
       <p className="tooltip">
         <Tooltip text="This is some tooltip text for a paragraph.">
@@ -23,8 +20,6 @@ function App() {
         </Tooltip>
       </p>
 
-      <br />
-      <br />
 
       {/* <h2 className="tooltip">
         <Tooltip text="Even icons can have tooltips!">Lorem2</Tooltip>
